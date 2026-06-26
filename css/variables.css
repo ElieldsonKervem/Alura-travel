@@ -1,0 +1,30 @@
+
+
+/* Variaveis de cores*/
+
+:root{
+   --primary-red:#8F0101;
+   --secundary-red:#B81515;
+   
+   --primary-black:#000000;
+   --secundary-black:#222222;
+
+   --primary-gray:#8C8C8C;
+   --secundary-gray:#D9D9D9;
+
+   --primary-primary:#FFFFFF;
+   --secundary-gray: #F5F5F5;
+
+
+
+   --header-font: 4.8rem bold;
+   --subtitle-font: 4.0rem bold;
+   --h3-font: 3.2rem;
+   --h4-font: 2.8rem;
+
+   --body-font: 1.8rem;
+   --body-2-font:2.0rem;
+
+}
+
+/*  */
