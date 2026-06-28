@@ -1,0 +1,118 @@
+.d-flex-r {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.d-flex-c {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.container {
+    padding: 1rem 2rem;
+}
+
+.gap-sm {
+    gap: 1rem;
+}
+
+
+.menu, label {
+    width: 2.8rem;
+    cursor: pointer;
+    z-index: 20; 
+}
+.menu-nav:has(#menu-checkbox:checked) .label {
+    position: fixed;
+    right: 2rem; 
+}
+
+.menu label div {
+    width: 100%;
+    height: 0.2rem;
+    background-color: var(--secundary-white, #fff); /* Adicionado #fff como fallback */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Permite a animação fluida */
+    transform-origin: center;
+}
+
+
+#menu-checkbox {
+    opacity: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+
+.menu-nav:has(#menu-checkbox:checked) .label div:nth-child(1) {
+    transform: translateY(0.8rem) rotate(45deg);
+}
+
+
+.menu-nav:has(#menu-checkbox:checked) .label div:nth-child(2) {
+    opacity: 0; 
+}
+
+.menu-nav:has(#menu-checkbox:checked) .label div:nth-child(3) {
+    transform: translateY(-0.8rem) rotate(-45deg);
+}
+
+
+
+.floating-menu {
+    position: fixed;
+    top: 0;
+    left: -100%; 
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 80px 20px;
+    background-color: #1A1A1A; 
+    box-shadow: 2px 0px 6px rgba(0, 0, 0, 0.5);
+    transition: left 0.3s ease;
+    z-index: 10;
+    list-style: none;
+}
+
+#menu-checkbox:checked ~ .floating-menu {
+    left: 0;
+}
+
+.floating-menu li {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.floating-menu a {
+    color: var(--secundary-white, #fff);
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: opacity 0.3s;
+}
+
+.floating-menu a:hover {
+    opacity: 0.7;
+}
+.d-hide{
+    display: none;
+}
+@media screen and (min-width:768px){
+   .menu {
+     display: none;
+   }
+   .floating-menu{
+    display: none;
+   }
+   .d-hide{
+    display: flex;
+   }
+
+   .imagem-menu-sm{
+     display: none;
+   }
+}

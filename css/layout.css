@@ -1,0 +1,21 @@
+
+header{
+    width: 100vw;
+    background: var( --primary-black);
+    max-height: 13.8rem;
+    position: relative;
+}
+.container{
+    max-width: 144.40rem;
+    margin: 0 auto;
+
+}
+header .container img{
+    height: 4.8rem;
+}
+
+header .container .menu-nav ul li a{
+  color: var(--secundary-white);
+}
+
+
