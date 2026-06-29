@@ -52,11 +52,13 @@ ol[role='list'] {
 }
 html{
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 body{
   font-size: 1.6rem;
   font-family: "Inter";
+  overflow-x: hidden;
 }
 a {
   text-decoration: none;

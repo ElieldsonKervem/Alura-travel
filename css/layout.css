@@ -18,4 +18,7 @@ header .container .menu-nav ul li a{
   color: var(--secundary-white);
 }
 
-
+.hero-container img{
+    width: 100vw;
+    max-height: 62rem;
+}

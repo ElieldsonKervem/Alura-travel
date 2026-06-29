@@ -116,3 +116,118 @@
      display: none;
    }
 }
+
+.frame-container{
+    width: 100%;
+    margin-top: 1.6rem;
+    padding: 0 2.4rem;
+}
+
+.primary-btn{
+    max-width: 28.0rem;
+    max-height: 6.4rem;
+    text-align: center;
+    background-color: var(--primary-red);
+    color: var(--secundary-white);
+    border: none;
+    padding: 2rem 0rem;
+    width: 24.0rem;
+    border-radius: 0.6rem;
+    font-weight: bold;
+}
+
+.offer-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,2,1fr);
+    margin: 1.6remauto;
+    gap: 2.4rem;
+    text-align: center;
+ 
+
+}
+
+.container-offers{
+    margin-top: 2.6rem;
+   
+}
+.container-offers h2{
+    font-weight: bold;
+    margin-bottom: 1.6rem;
+}
+
+.highlight-card::after{
+    content: " ";
+    display: block;
+    margin: 0 auto;
+    width: 20rem;
+    background: var(--secundary-red);
+    height: 0.5rem;
+}
+
+.offer-div{
+    width: 31.2rem;
+    padding: 2rem;
+    color: var(--secundary-white);
+    border-radius: 0.8rem;
+}
+.offer-div h3{
+    font-weight: bold;
+}
+
+.offer-div p{
+    font-weight: 100;
+}
+
+.offer-div:nth-child(1) {
+  background-image: url('../images/Mobile/Homepage/San\ Andreas.png');
+}
+
+.offer-div:nth-child(2) {
+  background-image: url('../images/Mobile/Homepage/Tokyo.jpg');
+}
+
+.offer-div:nth-child(3) {
+  background-image: url('../images/Mobile/Homepage/Paraíba.png');
+}
+
+.offer-div:nth-child(4) {
+  background-image: url('../images/Mobile/Homepage/Manaus.png');
+  
+}
+
+.category-card{
+    margin-top: 2.4rem;
+    text-align: center;
+}
+
+.category-card h2{
+    margin-bottom: 2.4rem;
+}
+
+.category-card.offer-container{
+    margin: 0 auto;
+}
+
+.category-card .offer-div{
+    background: var(--secundary-gray);
+    padding: 4.6rem;
+}
+
+.category-card .offer-div img{
+    max-height: 4.4rem;
+    height: fit-content;
+    width: 3.8rem;
+}
+
+@media screen and (min-width:760px){
+    .offer-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media screen and (min-width:1200px){
+    .offer-container{
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+
